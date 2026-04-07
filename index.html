@@ -11,177 +11,197 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2154846961944510');
+fbq('init', '2290734701335983');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2154846961944510&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=2290734701335983&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BAAZIGAR VIP MATKA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<title>BAAZIGAR VIP</title>
 
 <style>
 body{
-  margin:0;
-  font-family:Arial;
-  background: radial-gradient(circle at top,#0c2d4d,#061521);
-  color:#fff;
-  text-align:center;
-  padding:15px;
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#0b2c3d;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* Animated Border */
+.container{
+    position:relative;
+    width:360px;
+    padding:20px;
+    border-radius:25px;
+    background:linear-gradient(180deg,#062433,#021a25);
+    text-align:center;
+    z-index:1;
+}
+
+/* Running Border Effect */
+.container::before{
+    content:"";
+    position:absolute;
+    inset:-3px;
+    border-radius:25px;
+    background:linear-gradient(270deg,#ffd700,#00eaff,#6a00ff,#ffd700);
+    background-size:600% 600%;
+    animation:borderRun 6s linear infinite;
+    z-index:-1;
+}
+
+@keyframes borderRun{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Inner shadow for glass look */
+.container::after{
+    content:"";
+    position:absolute;
+    inset:3px;
+    border-radius:22px;
+    background:linear-gradient(180deg,#062433,#021a25);
+    z-index:-1;
 }
 
 /* Heading */
-h1{
-  color:#3ddcff;
-  font-size:28px;
-  margin:5px 0;
-}
-h2{
-  font-size:20px;
-  margin:0;
+.title{
+    font-size:24px;
+    font-weight:800;
+    background:linear-gradient(90deg,#00eaff,#00aaff);
+    -webkit-background-clip:text;
+    color:transparent;
 }
 
-/* Top Card */
-.top-card{
-  background:#0d2a45;
-  border-radius:18px;
-  padding:15px;
-  margin-top:15px;
-  display:flex;
-  align-items:center;
-  gap:15px;
+.subtitle{
+    font-size:18px;
+    font-weight:700;
+    color:#fff;
+    margin-bottom:15px;
 }
 
+/* Profile */
 .profile{
-  width:80px;
-  height:80px;
-  border-radius:12px;
-  border:3px solid #fff;
+    background:rgba(255,255,255,0.05);
+    padding:15px;
+    border-radius:20px;
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    justify-content:center;
 }
 
-.right{
-  text-align:left;
+.profile img{
+    width:80px;
+    height:80px;
+    border-radius:12px;
+    border:2px solid #fff;
+}
+
+.profile-text{
+    text-align:left;
 }
 
 .badge{
-  background:linear-gradient(90deg,#00c6ff,#0072ff);
-  padding:6px 12px;
-  border-radius:20px;
-  font-size:12px;
-  display:inline-block;
+    background:linear-gradient(90deg,#00c3ff,#0066ff);
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    color:#fff;
 }
 
 .follow{
-  margin-top:8px;
-  font-size:20px;
-  color:#3ddcff;
+    color:#00ffd5;
+    font-weight:700;
 }
 
 /* Button */
 .btn{
-  margin-top:20px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  padding:18px;
-  border-radius:50px;
-  background:linear-gradient(90deg,#00c6ff,#7b5cff);
-  font-size:20px;
-  font-weight:bold;
-  text-decoration:none;
-  color:#fff;
+    margin:20px 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    text-decoration:none;
+    padding:16px;
+    border-radius:18px;
+    background:linear-gradient(90deg,#00c3ff,#6a00ff);
+    color:white;
+    font-weight:700;
+    font-size:16px;
 
-  box-shadow:0 0 20px #00c6ff,0 0 30px #7b5cff;
-
-  animation:zoom 1.2s infinite;
+    box-shadow:0 0 20px #00c3ff, 0 0 35px #6a00ff;
+    transition:0.3s;
 }
 
-.btn img{
-  width:26px;
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 30px #00c3ff, 0 0 60px #6a00ff;
 }
 
-/* Zoom Animation */
-@keyframes zoom{
-  0%{transform:scale(1)}
-  50%{transform:scale(1.08)}
-  100%{transform:scale(1)}
+/* Info */
+.info{
+    background:linear-gradient(180deg,#003c3c,#001f1f);
+    padding:12px;
+    border-radius:15px;
+    margin-top:10px;
+    color:#fff;
+    font-size:14px;
+    text-align:left;
 }
 
-/* Boxes */
-.box{
-  margin-top:15px;
-  padding:15px;
-  border-radius:15px;
-  background:linear-gradient(180deg,#0c2f47,#082131);
-  font-size:14px;
-  line-height:1.5;
-  box-shadow:0 0 10px rgba(0,0,0,0.5);
-}
-
-.icon-box{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  text-align:left;
-}
-
-.icon{
-  width:40px;
-  height:40px;
-  background:linear-gradient(#00c6ff,#0072ff);
-  border-radius:10px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:20px;
+.tick{
+    color:#00eaff;
+    font-weight:bold;
 }
 </style>
-
 </head>
 
 <body>
 
-<h1>BAAZIGAR VIP MATKA</h1>
-<h2>ALL MARKET FREE GAME</h2>
+<div class="container">
 
-<div class="top-card">
-  <img src="https://raw.githubusercontent.com/dillubhai90/BAAZIGAR-VIP/main/IMG_20260406_100241_067.jpg" class="profile">
+<div class="title">BAAZIGAR VIP MATKA</div>
+<div class="subtitle">ALL MARKET FREE GAME</div>
 
-  <div class="right">
-    <div class="badge">⭐ OFFICIAL CHANNEL</div>
-    <div class="follow">100K+ FOLLOWERS</div>
-  </div>
+<div class="profile">
+    <img src="https://raw.githubusercontent.com/dillubhai90/BAAZIGAR-VIP/main/IMG_20260406_100241_067.jpg">
+    <div class="profile-text">
+        <div class="badge">⭐ OFFICIAL CHANNEL</div>
+        <div class="follow">100k+ FOLLOWERS</div>
+    </div>
 </div>
 
 <a href="https://telegram.me/+JlCKEm_37atmZDVl" class="btn">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
-  JOIN TELEGRAM CHANNEL
+    ✈️ JOIN TELEGRAM CHANNEL
 </a>
 
-<div class="box icon-box">
-  <div class="icon">✔</div>
-  <div>
-    @ कल्याण @ श्रीदेवी @ टाइम बाजार <br>
-    @ मिलन नाइट @ कल्याण नाइट @ मेन बाजार
-  </div>
+<div class="info">
+<span class="tick">✔</span> @ कल्याण @ श्रीदेवी @ टाइम बाजार <br>
+<span class="tick">✔</span> @ मिलन नाइट @ कल्याण नाइट @ मेन बाजार
 </div>
 
-<div class="box icon-box">
-  <div class="icon">✈</div>
-  <div>
-    Satka matka mein 100% bada Paisa jitna chahte ho to Hamara telegram channel join Karen Aaj hi Bilkul free game milega
-  </div>
+<div class="info">
+Satka matka mein 100% bada Paisa jitna chahte ho to Hamara telegram channel join Karen Aaj hi Bilkul free game milega
 </div>
 
-<div class="box icon-box">
-  <div class="icon">👥</div>
-  <div>
-    India.s best SATTA MATKA CHANNEL <br>
-    सटका मटका हेड ऑफिस मुंबई महाराष्ट्र
-  </div>
+<div class="info">
+India.s best SATTA MATKA CHANNEL <br>
+सटका मटका हेड ऑफिस मुंबई महाराष्ट्र
+</div>
+
 </div>
 
 </body>
